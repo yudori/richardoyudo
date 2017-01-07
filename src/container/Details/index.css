@@ -1,0 +1,21 @@
+.main-nav{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.page{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  display:block;
+  overflow:auto;
+  z-index: 1  ;
+}
+
+.content{
+  width: 50%;
+}

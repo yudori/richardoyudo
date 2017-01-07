@@ -1,0 +1,13 @@
+.home {
+    position: static;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(200,200,200, 0.4), rgba(100,100,100, 0.3)),
+                url('./cover_pic.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.contrast-theme-no-bg{
+    color: #ffffff;
+    background-color: rgba(0,0,0,0);
+}
