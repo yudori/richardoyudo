@@ -1,12 +1,7 @@
 import React from 'react';
-import { IndexLink, Link } from 'react-router';
-import Scroll from 'react-scroll';
 import './index.css';
 import { About, Portfolio, Contact } from '../../components';
 
-const ScrollLink = Scroll.Link;
-const Element = Scroll.Element;
-const Events = Scroll.Events;
 
 class Details extends React.Component{
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { IndexRoute, Router, Route, browserHistory } from 'react-router';
 import './App.css';
 import Home from './container/Home';
 import Details from './container/Details';

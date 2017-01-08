@@ -2,8 +2,9 @@
   "name": "yudo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://yudori.github.io",
+  "homepage": "http://yudori.github.io/yudo",
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-scripts": "0.7.0"
   },
   "dependencies": {
@@ -11,14 +12,13 @@
     "react-bootstrap": "0.30.7",
     "react-dom": "15.4.1",
     "react-fontawesome": "1.5.0",
-    "react-responsive": "^1.2.5",
-    "react-router": "3.0.0",
-    "react-scroll": "1.4.4"
+    "react-responsive": "1.2.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   }
 }
