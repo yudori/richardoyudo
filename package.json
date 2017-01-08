@@ -2,9 +2,9 @@
   "name": "yudo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://yudori.github.io/yudo",
+  "homepage": "http://yudori.github.io/richardoyudo",
   "devDependencies": {
-    "gh-pages": "^0.12.0",
+    "gh-pages": "0.12.0",
     "react-scripts": "0.7.0"
   },
   "dependencies": {
