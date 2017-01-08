@@ -5,19 +5,21 @@ class About extends React.Component{
         return(
             <div className="page main-theme">
                 <div className="tag-main">About Me</div>
-                <div className="content center">
+                <div className="content center-page">
                     <p>
                     I'm a software developer based in Lagos, Nigeria. I've worked with quite a bunch of programming languages and frameworks but
-                    I have most competence in Java and Python (for desktop apps and web backend) with emerging proficiency in React (for web frontend) and React-Native (for mobile apps).
-                    You could basically call me a full stack web and mobile application developer :)
+                    I have most competence in <b>Java</b> and <b>Python</b> (for desktop apps and web backend) with emerging proficiency in <b>React</b> (for web frontend) and <b>React-Native</b> (for mobile apps).
+                    I love learning & teaching.
                     </p>
                     <hr/>
-                    <span>Other Interests</span>
-                    <p>
-                        Robotics - I've always been intrigued by IoT especially fused with Machine Learning, AI and Computer Vision. I have beginner experience in these but you'll definitely find me at least dabbling around these in the future.
-                        Travelling - I've been to two other countries apart from Nigeria, I hope to count a lot more in the future. 
-                        Football - Manchester United Fan. I watch, play (pyhsically), and play (video games) whenever I have the chance.
-                    </p>
+                    <span><strong>Other Interests</strong></span>
+                    <div>
+                        <ul>
+                            <li><em><strong>Robotics</strong></em> - IoT especially fused with Machine Learning, AI and Computer Vision absolutely intrigues me. I dabble with some of these from time to time</li>
+                            <li><em><strong>Travelling</strong></em> - I love adventure. I've been to two other countries outside Nigeria, I hope to count a lot more in the future.</li>
+                            <li><em><strong>Football</strong></em> - Manchester United Fan. I watch and play football (physical & video games) whenever I have the chance.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         );

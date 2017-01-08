@@ -8,7 +8,7 @@ class Home extends React.Component{
                             Hi There,
                         </p>);
         const SummaryText = (<p>
-                                I'm a software developer :)
+                                I'm <span><b>Richard Oyudo</b></span>, a software developer :)
                             </p>);
         const Socials = (<div>
                             <a href=""><img className="icon-socials twitter" /></a>
@@ -18,7 +18,7 @@ class Home extends React.Component{
 
         return (
             <div className="home">
-                <div className="center contrast-theme-no-bg">
+                <div className="center-page contrast-theme-no-bg">
                     {Greeting}
                     {SummaryText}
                     {Socials}
