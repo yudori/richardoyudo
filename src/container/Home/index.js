@@ -4,16 +4,17 @@ import './index.css';
 class Home extends React.Component{
 
     render(){
-        const Greeting = (<p>
+        const Greeting = (<p className="home-text">
                             Hi There,
                         </p>);
-        const SummaryText = (<p>
-                                I'm <span><b>Richard Oyudo</b></span>, a software developer :)
+        const SummaryText = (<p className="home-text">
+                                I'm <span className="fa-lg"><b>Richard Oyudo</b></span>, a software developer :)
                             </p>);
-        const Socials = (<div>
-                            <a href=""><img className="icon-socials twitter" /></a>
-                            <a href=""><img className="icon-socials twitter" /></a>
-                            <a href=""><img className="icon-socials twitter" /></a>
+        const Socials = (<div className="socials">
+                            <a href="https://twitter.com/RichardOyudo" ><i className="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/richard-oyudo-97283a101" ><i className="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/yudori/" ><i className="fa fa-github"></i></a>
+                            <a href="https://bitbucket.org/yudori/" ><i className="fa fa-bitbucket"></i></a>
                         </div>);
 
         return (
