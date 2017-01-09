@@ -8,7 +8,7 @@ class Home extends React.Component{
                             Hi There,
                         </p>);
         const SummaryText = (<p className="home-text">
-                                I'm <span className="fa-lg"><b>Richard Oyudo</b></span>, a software developer :)
+                                I'm <span className="fa-lg"><b>Richard Oyudo.</b></span><br/> I write code :)
                             </p>);
         const Socials = (<div className="socials">
                             <a href="https://twitter.com/RichardOyudo" ><i className="fa fa-twitter"></i></a>
@@ -20,7 +20,7 @@ class Home extends React.Component{
         return (
             <div className="home">
                 <div className="center-page contrast-theme-no-bg">
-                    {Greeting}
+                    {Greeting} <br/>
                     {SummaryText}
                     {Socials}
                 </div>

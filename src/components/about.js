@@ -7,9 +7,9 @@ class About extends React.Component{
                 <div className="tag-main">About Me</div>
                 <div className="content center-page">
                     <p>
-                    I'm a software developer based in Lagos, Nigeria. I've worked with quite a bunch of programming languages and frameworks but
-                    I have most competence in <b>Java</b> and <b>Python</b> (for desktop apps and web backend) with emerging proficiency in <b>React</b> (for web frontend) and <b>React-Native</b> (for mobile apps).
-                    I love learning & teaching.
+                        I'm a software developer based in Lagos, Nigeria. I've worked with quite a bunch of technologies but
+                        I am most proficient in <b>Java</b> and <b>Python</b> (for desktop apps and web backend) and have emerging competence in <b>React</b> (for web frontend) and <b>React-Native</b> (for mobile apps).
+                        I love learning & teaching.
                     </p>
                     <hr/>
                     <span><strong>Other Interests</strong></span>

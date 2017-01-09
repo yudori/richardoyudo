@@ -21,10 +21,10 @@ class App extends Component {
                         </div>);
     return (
       <div className="App">
-        <MediaQuery minDeviceWidth={1224}>
+        <MediaQuery minWidth={960}>
           {largeScreen}
         </MediaQuery>
-        <MediaQuery maxDeviceWidth={1224}>
+        <MediaQuery maxWidth={960}>
           {smallScreen}
         </MediaQuery>
       </div>
