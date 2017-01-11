@@ -15,11 +15,6 @@ class Contact extends React.Component{
         this.setState({[event.target.name]: event.target.value});
     }
 
-    handleSubmit(event) {
-        event.preventDefault();
-
-    }
-
     render(){
         return(
             <div className="page main-theme">
@@ -28,13 +23,14 @@ class Contact extends React.Component{
                     <form  method="POST" action="http://formspree.io/ebube.rc@gmail.com">
                         <FormGroup>
                             <ControlLabel>Name</ControlLabel>
-                            <FormControl type="text" name="name" value={ this.state.name } onChange={ this.handleChange }/>
+                            <FormControl type="text" name="name" onChange={ this.handleChange }/>
                             <ControlLabel>Email</ControlLabel>
-                            <FormControl type="email" name="_replyto" value={ this.state.email } onChange={ this.handleChange }/>
+                            <FormControl type="email" name="_replyto" onChange={ this.handleChange }/>
                             <ControlLabel>Subject</ControlLabel>
-                            <FormControl type="text" name="_subject" value={ this.state.subject } onChange={ this.handleChange }/>
+                            <FormControl type="text" name="_subject" onChange={ this.handleChange }/>
                             <ControlLabel>Message</ControlLabel>
-                            <FormControl componentClass="textarea" placeholder="Hi Richard!" rows="8" name="message" value={ this.state.message } onChange={ this.handleChange }/>
+                            <FormControl componentClass="textarea" placeholder="Hi Richard!" rows="8" name="message" onChange={ this.handleChange }/>
+                            <input type="text" name="_gotcha" style="display:none" />
                         </FormGroup>
                         <Button type="submit"> Send Message</Button>
                     </form>
