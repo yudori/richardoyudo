@@ -5,7 +5,7 @@ import { Button, FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
 class Contact extends React.Component{
     constructor(props) {
         super(props);
-        this.state = { name: '', email: '', subject: '', message: ''};
+        this.state = { name: '', _replyto: '', _subject: '', message: ''};
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -30,9 +30,9 @@ class Contact extends React.Component{
                             <ControlLabel>Name</ControlLabel>
                             <FormControl type="text" name="name" value={ this.state.name } onChange={ this.handleChange }/>
                             <ControlLabel>Email</ControlLabel>
-                            <FormControl type="email" name="email" value={ this.state.email } onChange={ this.handleChange }/>
+                            <FormControl type="email" name="_replyto" value={ this.state.email } onChange={ this.handleChange }/>
                             <ControlLabel>Subject</ControlLabel>
-                            <FormControl type="text" name="subject" value={ this.state.subject } onChange={ this.handleChange }/>
+                            <FormControl type="text" name="_subject" value={ this.state.subject } onChange={ this.handleChange }/>
                             <ControlLabel>Message</ControlLabel>
                             <FormControl componentClass="textarea" placeholder="Hi Richard!" rows="8" name="message" value={ this.state.message } onChange={ this.handleChange }/>
                         </FormGroup>
