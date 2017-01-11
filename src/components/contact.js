@@ -17,8 +17,7 @@ class Contact extends React.Component{
 
     handleSubmit(event) {
         event.preventDefault();
-        alert(this.state.name + this.state.email+ this.state.subject+ this.state.message);
-        document.location.href = "mailto:xyz@something.com";
+
     }
 
     render(){
@@ -26,7 +25,7 @@ class Contact extends React.Component{
             <div className="page main-theme">
                 <div className="tag-main">Contact</div>
                 <div className="content center-page">
-                    <form onSubmit={this.handleSubmit}>
+                    <form  method="POST" action="http://formspree.io/ebube.rc@gmail.com">
                         <FormGroup>
                             <ControlLabel>Name</ControlLabel>
                             <FormControl type="text" name="name" value={ this.state.name } onChange={ this.handleChange }/>
