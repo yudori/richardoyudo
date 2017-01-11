@@ -7,7 +7,6 @@ class Contact extends React.Component{
         super(props);
         this.state = { name: '', _replyto: '', _subject: '', message: ''};
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(event) {
@@ -30,7 +29,7 @@ class Contact extends React.Component{
                             <FormControl type="text" name="_subject" onChange={ this.handleChange }/>
                             <ControlLabel>Message</ControlLabel>
                             <FormControl componentClass="textarea" placeholder="Hi Richard!" rows="8" name="message" onChange={ this.handleChange }/>
-                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="text" name="_gotcha" style={{'display':'none'}} />
                         </FormGroup>
                         <Button type="submit"> Send Message</Button>
                     </form>
