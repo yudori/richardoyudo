@@ -16,7 +16,7 @@ class Contact extends React.Component{
 
     render(){
         return(
-            <div className="page main-theme">
+            <div className="page main-theme" style={{'height':this.props.pageHeight}}>
                 <div className="tag-main">Contact</div>
                 <div className="content center-page">
                     <form  method="POST" action="http://formspree.io/ebube.rc@gmail.com">

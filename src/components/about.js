@@ -1,9 +1,14 @@
 import React from 'react';
 
 class About extends React.Component{
+
+    constructor(props){
+        super(props);
+    }
+
     render(){
         return(
-            <div className="page main-theme">
+            <div className="page main-theme" style={{'height':this.props.pageHeight}}>
                 <div className="tag-main">About Me</div>
                 <div className="content center-page">
                     <p>

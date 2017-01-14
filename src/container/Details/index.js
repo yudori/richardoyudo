@@ -13,9 +13,9 @@ class Details extends React.Component{
                     <a href="#portfolio" className="smooth"> Portfolio </a>//
                     <a href="#contact" className="smooth"> Contact </a>
                 </span>
-                <About />
-                <Portfolio />
-                <Contact />
+                <About pageHeight={this.props.pageHeight}/>
+                <Portfolio pageHeight={this.props.pageHeight}/>
+                <Contact pageHeight={this.props.pageHeight}/>
             </div>
         )
     }

@@ -6,18 +6,32 @@ import MediaQuery from 'react-responsive';
 
 
 class App extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {'pageHeight': window.innerHeight+'px'};
+  }
+
+  updateDimensions = () => {
+     this.setState({'pageHeight': window.innerHeight+'px'});
+  }
+
+  componentWillMount(){
+    this.updateDimensions();
+  }
+
   render() {
     const largeScreen = (<div className="full-page">
                           <div className="left-pane">
-                            <Home/>
+                            <Home pageHeight={this.state.pageHeight}/>
                           </div>
                           <div className="right-pane">
-                            <Details/> 
+                            <Details pageHeight={this.state.pageHeight}/> 
                           </div>
                         </div>);
     const smallScreen = (<div className="full-page">
-                          <Home/>
-                          <Details/> 
+                          <Home pageHeight={this.state.pageHeight}/>
+                          <Details pageHeight={this.state.pageHeight}/> 
                         </div>);
     return (
       <div className="App">
@@ -29,6 +43,14 @@ class App extends Component {
         </MediaQuery>
       </div>
     );
+  }
+
+  componentDidMount(){
+     window.addEventListener("resize", this.updateDimensions);
+  }
+
+  componentWillMount(){
+    window.removeEventListener("resize", this.updateDimensions);
   }
 }
 

@@ -1,7 +1,7 @@
 .home {
     position: static;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     background: linear-gradient(rgba(50,50,50, 0.4), rgba(100,100,100, 0.3)),
                 url('./cover_pic.jpg') no-repeat center;
     background-size: cover;

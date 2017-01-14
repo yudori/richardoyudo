@@ -18,7 +18,7 @@ class Home extends React.Component{
                         </div>);
 
         return (
-            <div className="home">
+            <div className="home" style={{'height':this.props.pageHeight}}>
                 <div className="center-page contrast-theme-no-bg">
                     {Greeting} <br/>
                     {SummaryText}

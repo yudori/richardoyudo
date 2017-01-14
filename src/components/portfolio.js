@@ -4,7 +4,7 @@ import { Panel, Col } from 'react-bootstrap';
 class Portfolio extends React.Component{
     render(){
         return(
-            <div className="page contrast-theme">
+            <div className="page contrast-theme" style={{'height':this.props.pageHeight}}>
                 <div className="tag-contrast">Portfolio</div>
                 <div className="content center-page">
                     <Col xs={12} md={12}>
