@@ -49,7 +49,7 @@ class App extends Component {
      window.addEventListener("resize", this.updateDimensions);
   }
 
-  componentWillMount(){
+  componentWillUnmount(){
     window.removeEventListener("resize", this.updateDimensions);
   }
 }

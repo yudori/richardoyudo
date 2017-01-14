@@ -15,11 +15,23 @@ class Contact extends React.Component{
     }
 
     render(){
+        const style = {
+            'main':{
+                height: this.props.pageHeight,
+                backgroundColor: this.props.colours.bg,
+                color: this.props.colours.fg
+            },
+            'tag':{
+                backgroundColor: this.props.colours.accent,
+                color: this.props.colours.bg
+            }
+        }
+
         return(
-            <div className="page main-theme" style={{'height':this.props.pageHeight}}>
-                <div className="tag-main">Contact</div>
+            <div className="page main-theme" style={style.main}>
+                <div className="tag" style={style.tag}>Contact</div>
                 <div className="content center-page">
-                    <form  method="POST" action="http://formspree.io/ebube.rc@gmail.com">
+                    <form  method="POST" action="https://formspree.io/ebube.rc@gmail.com">
                         <FormGroup>
                             <ControlLabel>Name</ControlLabel>
                             <FormControl type="text" name="name" onChange={ this.handleChange }/>

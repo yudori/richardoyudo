@@ -3,22 +3,33 @@ import { Panel, Col } from 'react-bootstrap';
 
 class Portfolio extends React.Component{
     render(){
+        const style = {
+            'main':{
+                height: this.props.pageHeight,
+                backgroundColor: this.props.colours.bg,
+                color: this.props.colours.fg
+            },
+            'tag':{
+                backgroundColor: this.props.colours.fg,
+                color: this.props.colours.accent
+            }
+        }
         return(
-            <div className="page contrast-theme" style={{'height':this.props.pageHeight}}>
-                <div className="tag-contrast">Portfolio</div>
+            <div className="page" style={style.main}>
+                <div className="tag" style={style.tag}>Portfolio</div>
                 <div className="content center-page">
                     <Col xs={12} md={12}>
-                        <Panel className="main-theme">
+                        <Panel className="main-theme" style={{color:this.props.colours.accent}}>
                             Wrote a desktop middleware application for a retail management solution called <a href="http://vergeapp.com">Verge</a>
                         </Panel>
                     </Col>
                     <Col xs={12} md={12}>
-                        <Panel className="main-theme">
+                        <Panel className="main-theme" style={{color:this.props.colours.accent}}>
                             Co-developed an event-targeted realtime video and image capturing application with several custom filters known as <a href="http://selfievs.com/">SelfieVS</a>
                         </Panel>
                     </Col>
                     <Col xs={12} md={12}>
-                        <Panel className="main-theme">
+                        <Panel className="main-theme" style={{color:this.props.colours.accent}}>
                             Co-developing a vehicle diagnostic and repair scheduling mobile application known as <a href="https://play.google.com/store/apps/details?id=com.milefriend.mobileapp&hl=en">MileFriend</a>
                         </Panel>
                     </Col>

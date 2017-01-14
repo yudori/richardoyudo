@@ -2,14 +2,21 @@ import React from 'react';
 
 class About extends React.Component{
 
-    constructor(props){
-        super(props);
-    }
-
     render(){
+        const style = {
+            'main':{
+                height: this.props.pageHeight,
+                backgroundColor: this.props.colours.bg,
+                color: this.props.colours.fg
+            },
+            'tag':{
+                backgroundColor: this.props.colours.accent,
+                color: this.props.colours.bg
+            }
+        }
         return(
-            <div className="page main-theme" style={{'height':this.props.pageHeight}}>
-                <div className="tag-main">About Me</div>
+            <div className="page" style={style.main}>
+                <div className="tag" style={style.tag}>About Me</div>
                 <div className="content center-page">
                     <p>
                         I'm a software developer based in Lagos, Nigeria. I've worked with quite a bunch of technologies but
