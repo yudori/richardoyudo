@@ -5,7 +5,7 @@ class About extends React.Component{
     render(){
         const style = {
             'main':{
-                height: this.props.pageHeight,
+                minHeight: this.props.pageHeight,
                 backgroundColor: this.props.colours.bg,
                 color: this.props.colours.fg
             },
@@ -17,7 +17,7 @@ class About extends React.Component{
         return(
             <div className="page" style={style.main}>
                 <div className="tag" style={style.tag}>About Me</div>
-                <div className="content center-page">
+                <div className="content">
                     <p>
                         I'm a software developer based in Lagos, Nigeria. I've worked with quite a bunch of technologies but
                         I am most proficient in <b>Java</b> and <b>Python</b> (for desktop apps and web backend) and have emerging competence in <b>React</b> (for web frontend) and <b>React-Native</b> (for mobile apps).

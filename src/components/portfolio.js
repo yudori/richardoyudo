@@ -5,7 +5,7 @@ class Portfolio extends React.Component{
     render(){
         const style = {
             'main':{
-                height: this.props.pageHeight,
+                minHeight: this.props.pageHeight,
                 backgroundColor: this.props.colours.bg,
                 color: this.props.colours.fg
             },
@@ -17,7 +17,7 @@ class Portfolio extends React.Component{
         return(
             <div className="page" style={style.main}>
                 <div className="tag" style={style.tag}>Portfolio</div>
-                <div className="content center-page">
+                <div className="content">
                     <Col xs={12} md={12}>
                         <Panel className="main-theme" style={{color:this.props.colours.accent}}>
                             Wrote a desktop middleware application for a retail management solution called <a href="http://vergeapp.com">Verge</a>

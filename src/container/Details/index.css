@@ -9,11 +9,10 @@
   position: relative;
   width: 100%;
   padding: 20px;
-  overflow:auto;
 }
 
-.content{
-  margin-top: 20px;
+.content{ 
+  margin: 20px auto;
   width: 85%;
   text-align: left;
 }
