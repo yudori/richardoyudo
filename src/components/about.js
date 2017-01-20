@@ -15,7 +15,7 @@ class About extends React.Component{
             }
         }
         return(
-            <div className="page" style={style.main}>
+            <div id='about' className="page" style={style.main}>
                 <div className="tag" style={style.tag}>About Me</div>
                 <div className="content">
                     <p>

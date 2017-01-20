@@ -1,6 +1,9 @@
 import React from 'react';
 import './index.css';
 import { About, Portfolio, Contact } from '../../components';
+import Scroll from 'react-scroll';
+
+var Link = Scroll.Link;
 
 
 class Details extends React.Component{
@@ -9,9 +12,9 @@ class Details extends React.Component{
         return (
             <div>
                 <span className="main-nav">
-                    <a href="#about" className="smooth"> About </a>//
-                    <a href="#portfolio" className="smooth"> Portfolio </a>//
-                    <a href="#contact" className="smooth"> Contact </a>
+                    <Link to="about" spy={true} smooth={true} duration={500}> About </Link>//
+                    <Link to="portfolio" spy={true} smooth={true} duration={500}> Portfolio </Link>//
+                    <Link to="contact" spy={true} smooth={true} duration={500}> Contact </Link>
                 </span>
                 <About pageHeight={this.props.pageHeight} colours={{'bg':'#fff','fg':'#000','accent':'#999'}}/>
                 <Portfolio pageHeight={this.props.pageHeight} colours={{'bg':'#999','fg':'#fff','accent':'#000'}}/>

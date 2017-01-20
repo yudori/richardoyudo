@@ -15,7 +15,7 @@ class Portfolio extends React.Component{
             }
         }
         return(
-            <div className="page" style={style.main}>
+            <div id='portfolio' className="page" style={style.main}>
                 <div className="tag" style={style.tag}>Portfolio</div>
                 <div className="content">
                     <Col xs={12} md={12}>

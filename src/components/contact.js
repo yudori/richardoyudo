@@ -28,7 +28,7 @@ class Contact extends React.Component{
         }
 
         return(
-            <div className="page main-theme" style={style.main}>
+            <div id="contact" className="page main-theme" style={style.main}>
                 <div className="tag" style={style.tag}>Contact Me</div>
                 <div className="content">
                     <form  method="POST" action="https://formspree.io/ebube.rc@gmail.com">
