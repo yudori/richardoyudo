@@ -20,12 +20,17 @@ class Portfolio extends React.Component{
                 <div className="content">
                     <Col xs={12} md={12}>
                         <Panel className="main-theme" style={{color:this.props.colours.accent}}>
-                            Wrote a desktop middleware application for a retail management solution called <a href="http://vergeapp.com">Verge</a>
+                            Wrote a desktop middleware application to sync POS data for a retail management solution called <a href="http://vergeapp.com">Verge</a>
                         </Panel>
                     </Col>
                     <Col xs={12} md={12}>
                         <Panel className="main-theme" style={{color:this.props.colours.accent}}>
                             Co-developed an event-targeted realtime video and image capturing application with several custom filters known as <a href="http://selfievs.com/">SelfieVS</a>
+                        </Panel>
+                    </Col>
+                    <Col xs={12} md={12}>
+                        <Panel className="main-theme" style={{color:this.props.colours.accent}}>
+                            Wrote a <a href="https://bitbucket.org/yudori/videostab">Video Stabilizer</a> application that harnesses image processing techniques to remove shaky motion in videos
                         </Panel>
                     </Col>
                     <Col xs={12} md={12}>

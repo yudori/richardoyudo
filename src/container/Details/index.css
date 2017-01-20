@@ -8,7 +8,11 @@
 .page{
   position: relative;
   width: 100%;
-  padding: 20px;
+  padding: 0;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .content{ 
