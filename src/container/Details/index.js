@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { About, Portfolio, Contact } from '../../components';
+import { About, Portfolio, Contact, Footer } from '../../components';
 import Scroll from 'react-scroll';
 
 var Link = Scroll.Link;
@@ -19,6 +19,7 @@ class Details extends React.Component{
                 <About pageHeight={this.props.pageHeight} colours={{'bg':'#fff','fg':'#000','accent':'#999'}}/>
                 <Portfolio pageHeight={this.props.pageHeight} colours={{'bg':'#999','fg':'#fff','accent':'#000'}}/>
                 <Contact pageHeight={this.props.pageHeight} colours={{'bg':'#fff','fg':'#000','accent':'#999'}}/>
+                <Footer pageHeight='100px' colours={{'bg':'#999','fg':'#fff','accent':'#000'}}/>
             </div>
         )
     }

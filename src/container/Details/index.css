@@ -27,3 +27,9 @@
 .space-top{
   margin-top: 12px;
 }
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
