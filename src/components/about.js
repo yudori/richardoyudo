@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col } from 'react-bootstrap';
 
 class About extends React.Component{
 
@@ -24,13 +25,19 @@ class About extends React.Component{
                         I love learning & teaching.
                     </p>
                     <hr/>
-                    <span><strong>Other Interests</strong></span>
-                    <div>
-                        <ul>
-                            <li><em><strong>Robotics</strong></em> - IoT especially fused with Machine Learning, AI and Computer Vision absolutely intrigues me. I dabble with some of these from time to time</li>
-                            <li><em><strong>Travelling</strong></em> - I love adventure. I've been to two other countries outside Nigeria, I hope to count a lot more in the future.</li>
-                            <li><em><strong>Football</strong></em> - Manchester United Fan. I watch and play football (physical & video games) whenever I have the chance.</li>
-                        </ul>
+                    <div className="space-top">
+                        <span><strong>Other Interests</strong></span>
+                        <div className="space-top">
+                            <Col sm={6} md={4}>
+                                <em><strong>Robotics</strong></em><br/>IoT, AI and Computer Vision turn me on. I dabble with some of these from time to time
+                            </Col>
+                            <Col sm={6} md={4}>
+                                <em><strong>Travelling</strong></em><br/>I love adventure. I've been to two other countries outside Nigeria, I hope to count a lot more in the future.
+                            </Col>
+                            <Col sm={6} md={4}>
+                                <em><strong>Football</strong></em><br/>Manchester United Fan. I watch and play football whenever I have the chance.
+                            </Col>
+                        </div>
                     </div>
                 </div>
             </div>

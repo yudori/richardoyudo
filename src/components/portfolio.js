@@ -17,7 +17,7 @@ class Portfolio extends React.Component{
         return(
             <div id='portfolio' className="page" style={style.main}>
                 <div className="tag" style={style.tag}>Portfolio</div>
-                <div className="content">
+                <div className="content align-left">
                     <Col xs={12} md={12}>
                         <Panel className="main-theme" style={{color:this.props.colours.accent}}>
                             Wrote a desktop middleware application to sync POS data for a retail management solution called <a href="http://vergeapp.com">Verge</a>

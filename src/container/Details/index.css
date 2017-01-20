@@ -18,5 +18,12 @@
 .content{ 
   margin: 20px auto;
   width: 85%;
+}
+
+.align-left{
   text-align: left;
+}
+
+.space-top{
+  margin-top: 12px;
 }

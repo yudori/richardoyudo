@@ -40,10 +40,10 @@
 
 .tag{
   position: absolute;
-  top: 20px;
+  top: 24px;
   left: 0px;
   margin: 0px;
   padding: 5px 10px;
   display:inline-block;
-  font-size: 14px;
+  font-size: 15px;
 }
