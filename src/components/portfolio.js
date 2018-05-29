@@ -35,7 +35,12 @@ class Portfolio extends React.Component{
                     </Col>
                     <Col xs={12} md={12}>
                         <Panel className="main-theme" style={{color:this.props.colours.accent}}>
-                            Co-developing a vehicle diagnostic and repair scheduling mobile application known as <a href="https://play.google.com/store/apps/details?id=com.milefriend.mobileapp&hl=en">MileFriend</a>
+                            Co-developed a vehicle diagnostic and repair scheduling mobile application (and backend APIs) known as <a href="https://play.google.com/store/apps/details?id=com.milefriend.mobileapp&hl=en">MileFriend</a>
+                        </Panel>
+                    </Col>
+                    <Col xs={12} md={12}>
+                        <Panel className="main-theme" style={{color:this.props.colours.accent}}>
+                            Built the MVP of a loan management and tracking system for ecommerce merchant financing while working at <a href="https://www.invoizpaid.com">InvoizPaid</a>
                         </Panel>
                     </Col>
                     <Col xs={12} md={12}>
