@@ -11,7 +11,7 @@ class Home extends React.Component{
                                 I'm <span className="fa-lg"><b>Richard Oyudo.</b></span><br/> I write code :)
                             </p>);
         const Socials = (<div className="socials">
-                            <a href="https://twitter.com/RichardOyudo" ><i className="fa fa-twitter"></i></a>
+                            <a href="https://twitter.com/yudori_" ><i className="fa fa-twitter"></i></a>
                             <a href="https://www.linkedin.com/in/richard-oyudo-97283a101" ><i className="fa fa-linkedin"></i></a>
                             <a href="https://github.com/yudori/" ><i className="fa fa-github"></i></a>
                             <a href="https://bitbucket.org/yudori/" ><i className="fa fa-bitbucket"></i></a>
