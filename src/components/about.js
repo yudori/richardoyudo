@@ -21,8 +21,10 @@ class About extends React.Component{
                 <div className="content">
                     <p>
                         <h3>Software developer, builder.</h3>
-                        I am primarily a <b>Python</b> developer but my love for building stuff has made me competent in technologies including <b>Javascript, Java, React, React Native, Docker, AWS,</b> to name a few.
-                        <p><i>If it can be learned, I can learn it.</i></p>
+                        Well, I'm supposed to be a <b>Python</b> developer, and I primarily am, 
+                        but you see I've also had years of experience in <b>Javascript, Java, React, React Native, Docker, AWS,</b> and a bunch of other technologies.
+                        I like to learn, build and explore.
+                        <p><i>I'm also an <s>amateur</s> pianist ¯\_(ツ)_/¯</i></p>
                     </p>
                 </div>
             </div>
